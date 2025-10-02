@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Stitch Design</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style type="text/tailwindcss">
+    :root {
+      --primary-color: #13a4ec;
+      --background-color: #0D1117;
+      --card-color: #161B22;
+      --border-color: #30363D;
+      --text-primary: #E6EDF3;
+      --text-secondary: #8B949E;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: var(--background-color);
+      color: var(--text-primary);
+    }
+    .btn-primary {
+      @apply bg-[var(--primary-color)] text-white font-semibold py-2 px-4 rounded-md hover:bg-opacity-90 transition-colors;
+    }
+    .input-base {
+      @apply bg-[var(--card-color)] border border-[var(--border-color)] rounded-md focus:ring-2 focus:ring-[var(--primary-color)] focus:border-transparent;
+    }
+    .tab-active {
+      @apply text-[var(--primary-color)] border-b-2 border-[var(--primary-color)];
+    }
+    .tab-inactive {
+      @apply text-[var(--text-secondary)] border-b-2 border-transparent hover:text-[var(--text-primary)];
+    }
+    .radio-card {
+      @apply relative flex cursor-pointer items-center justify-center rounded-md border border-[var(--border-color)] bg-[var(--card-color)] px-4 py-3 text-sm font-medium text-[var(--text-secondary)] hover:bg-opacity-70 transition-all;
+    }
+    .radio-card-selected {
+      @apply border-[var(--primary-color)] text-[var(--text-primary)] ring-2 ring-[var(--primary-color)];
+    }
+    .color-swatch {
+      @apply cursor-pointer w-10 h-10 rounded-full border-2 border-transparent transition-all;
+    }
+    .color-swatch-selected {
+      @apply ring-2 ring-offset-2 ring-offset-[var(--card-color)] ring-[var(--primary-color)] border-white;
+    }
+  </style>
+</head>
+<body class="bg-[var(--background-color)]">
+<div class="flex flex-col min-h-screen">
+<header class="sticky top-0 z-50 bg-[var(--background-color)]/80 backdrop-blur-sm border-b border-[var(--border-color)]">
+<div class="container mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex items-center justify-between h-16">
+<div class="flex items-center space-x-8">
+<a class="flex items-center space-x-2" href="#">
+<svg class="h-8 w-8 text-[var(--primary-color)]" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M24 4H42V17.3333V30.6667H24V44H6V30.6667V17.3333H24V4Z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+<h1 class="text-xl font-bold text-[var(--text-primary)]">Web Assets Library</h1>
+</a>
+<nav class="hidden md:flex items-center space-x-6">
+<a class="text-sm font-medium text-[var(--text-secondary)] hover:text-[var(--text-primary)] transition-colors" href="#">Dashboard</a>
+<a class="text-sm font-medium text-[var(--text-primary)]" href="#">Assets</a>
+<a class="text-sm font-medium text-[var(--text-secondary)] hover:text-[var(--text-primary)] transition-colors" href="#">Templates</a>
+<a class="text-sm font-medium text-[var(--text-secondary)] hover:text-[var(--text-primary)] transition-colors" href="#">Integrations</a>
+<a class="text-sm font-medium text-[var(--text-secondary)] hover:text-[var(--text-primary)] transition-colors" href="#">Help</a>
+</nav>
+</div>
+<div class="flex items-center space-x-4">
+<div class="relative hidden md:block">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-[var(--text-secondary)]">search</span>
+<input class="input-base pl-10 pr-4 py-2 text-sm w-64" placeholder="Search..." type="search"/>
+</div>
+<button class="p-2 rounded-full hover:bg-[var(--card-color)] transition-colors">
+<span class="material-symbols-outlined text-[var(--text-secondary)]">notifications</span>
+</button>
+<button class="p-2 rounded-full hover:bg-[var(--card-color)] transition-colors">
+<span class="material-symbols-outlined text-[var(--text-secondary)]">help_outline</span>
+</button>
+<div class="w-10 h-10 bg-center bg-no-repeat bg-cover rounded-full" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAKnocAhAWmuZunjxnvWnwgfNu0s1si136rU3ii0f6igfuMmEzUWLximMGW93nEfUk7lIfyLFxMlV8LgiCYIKfjsvnnEWvD8re88NQwE1M36LKZl_WdJW_N1Ct0TNmfqE806-BTAawyeRO9VV3A7C1gGtGE82h0RUjRXhaw_TEv-xQ-ocZdEScHQTrirkoH8_V6oDWNtGtMT9RjT_oeqZ0b8RlgzFJfv7tx1hhfXoMZZh5UxggkBzcEEQHRtHeDe368w3SsbJtdavY");'></div>
+</div>
+</div>
+</div>
+</header>
+<main class="flex-grow container mx-auto px-4 sm:px-6 lg:px-8 py-8">
+<div class="max-w-5xl mx-auto">
+<div class="mb-8">
+<h2 class="text-3xl font-bold text-[var(--text-primary)]">Section Editor</h2>
+<p class="text-[var(--text-secondary)] mt-1">Customize the appearance and behavior of your webpage sections.</p>
+</div>
+<div class="bg-[var(--card-color)] border border-[var(--border-color)] rounded-lg">
+<div class="border-b border-[var(--border-color)]">
+<nav aria-label="Tabs" class="flex space-x-2 p-2">
+<button class="tab-active px-4 py-2 text-sm font-medium rounded-md">Layout</button>
+<button class="tab-inactive px-4 py-2 text-sm font-medium rounded-md">Background</button>
+<button class="tab-inactive px-4 py-2 text-sm font-medium rounded-md">Content</button>
+<button class="tab-inactive px-4 py-2 text-sm font-medium rounded-md">Responsive</button>
+</nav>
+</div>
+<div class="p-6 space-y-8">
+<section>
+<h3 class="text-lg font-semibold text-[var(--text-primary)] mb-4">Layout Options</h3>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+<label class="radio-card radio-card-selected">
+<input checked="" class="sr-only" name="layout" type="radio"/>
+<span class="material-symbols-outlined mr-2">width_full</span>
+                  Full Width
+                </label>
+<label class="radio-card">
+<input class="sr-only" name="layout" type="radio"/>
+<span class="material-symbols-outlined mr-2">width_normal</span>
+                  Boxed
+                </label>
+<label class="radio-card">
+<input class="sr-only" name="layout" type="radio"/>
+<span class="material-symbols-outlined mr-2">grid_view</span>
+                  Grid
+                </label>
+<label class="radio-card">
+<input class="sr-only" name="layout" type="radio"/>
+<span class="material-symbols-outlined mr-2">view_column</span>
+                  Columns
+                </label>
+</div>
+</section>
+<section>
+<h3 class="text-lg font-semibold text-[var(--text-primary)] mb-4">Background</h3>
+<div class="flex items-center space-x-2 border-b border-[var(--border-color)] mb-4">
+<button class="pb-2 tab-active px-1 text-sm">Color</button>
+<button class="pb-2 tab-inactive px-1 text-sm">Image</button>
+<button class="pb-2 tab-inactive px-1 text-sm">Gradient</button>
+</div>
+<div class="flex flex-wrap gap-4">
+<label><input checked="" class="sr-only" name="bgcolor" type="radio"/><div class="color-swatch color-swatch-selected" style="background-color: #FFFFFF;"></div></label>
+<label><input class="sr-only" name="bgcolor" type="radio"/><div class="color-swatch" style="background-color: #F0F0F0;"></div></label>
+<label><input class="sr-only" name="bgcolor" type="radio"/><div class="color-swatch" style="background-color: #E0E0E0;"></div></label>
+<label><input class="sr-only" name="bgcolor" type="radio"/><div class="color-swatch" style="background-color: #C0C0C0;"></div></label>
+<label><input class="sr-only" name="bgcolor" type="radio"/><div class="color-swatch" style="background-color: #A0A0A0;"></div></label>
+<label><input class="sr-only" name="bgcolor" type="radio"/><div class="color-swatch" style="background-color: #1A1A1A;"></div></label>
+<label><input class="sr-only" name="bgcolor" type="radio"/><div class="color-swatch" style="background-color: #333333;"></div></label>
+<button class="w-10 h-10 rounded-full border-2 border-dashed border-[var(--border-color)] flex items-center justify-center text-[var(--text-secondary)] hover:border-[var(--primary-color)] hover:text-[var(--primary-color)] transition-colors">
+<span class="material-symbols-outlined">add</span>
+</button>
+</div>
+</section>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<section>
+<h3 class="text-lg font-semibold text-[var(--text-primary)] mb-4">Content Placement</h3>
+<div class="space-y-4">
+<div>
+<label class="block text-sm font-medium text-[var(--text-secondary)] mb-1" for="vertical-align">Vertical Alignment</label>
+<select class="input-base w-full p-2" id="vertical-align">
+<option>Top</option>
+<option>Center</option>
+<option>Bottom</option>
+</select>
+</div>
+<div>
+<label class="block text-sm font-medium text-[var(--text-secondary)] mb-1" for="horizontal-align">Horizontal Alignment</label>
+<select class="input-base w-full p-2" id="horizontal-align">
+<option>Left</option>
+<option>Center</option>
+<option>Right</option>
+</select>
+</div>
+</div>
+</section>
+<section>
+<h3 class="text-lg font-semibold text-[var(--text-primary)] mb-4">Responsive Settings</h3>
+<div class="space-y-4">
+<div>
+<label class="block text-sm font-medium text-[var(--text-secondary)] mb-1" for="device">Device</label>
+<select class="input-base w-full p-2" id="device">
+<option>Desktop</option>
+<option>Tablet</option>
+<option>Mobile</option>
+</select>
+</div>
+<div>
+<label class="block text-sm font-medium text-[var(--text-secondary)] mb-1" for="visibility">Visibility</label>
+<select class="input-base w-full p-2" id="visibility">
+<option>Visible on all devices</option>
+<option>Hide on Tablet</option>
+<option>Hide on Mobile</option>
+</select>
+</div>
+</div>
+</section>
+</div>
+</div>
+<div class="p-6 border-t border-[var(--border-color)] flex justify-end">
+<button class="btn-primary">
+<span class="material-symbols-outlined text-base mr-1 -ml-1 align-middle">save</span>
+                Save Changes
+            </button>
+</div>
+</div>
+</div>
+</main>
+</div>
+
+</body></html>
