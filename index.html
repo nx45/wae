@@ -1,0 +1,226 @@
+<html><head>
+<meta charset="utf-8"/>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Inter%3Awght%40400%3B500%3B600%3B700&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<title>Stitch Design</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style type="text/tailwindcss">
+      :root {
+        --primary-color: #13a4ec;
+      }
+      .material-symbols-outlined {
+        font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+      }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-100" style='font-family: Inter, "Noto Sans", sans-serif;'>
+<div class="relative flex h-auto min-h-screen w-full flex-col overflow-x-hidden">
+<div class="flex h-full grow flex-col">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-gray-800 px-10 py-3">
+<div class="flex items-center gap-8">
+<div class="flex items-center gap-3 text-white">
+<div class="flex h-10 w-10 items-center justify-center rounded-md bg-[var(--primary-color)] text-white">
+<span class="material-symbols-outlined text-2xl">
+                    auto_awesome_mosaic
+                </span>
+</div>
+<h2 class="text-white text-lg font-bold">Asset Library</h2>
+</div>
+<nav class="flex items-center gap-6">
+<a class="text-gray-300 hover:text-white text-sm font-medium transition-colors" href="#">Home</a>
+<a class="text-white text-sm font-medium" href="#">Assets</a>
+<a class="text-gray-300 hover:text-white text-sm font-medium transition-colors" href="#">Collections</a>
+<a class="text-gray-300 hover:text-white text-sm font-medium transition-colors" href="#">Templates</a>
+</nav>
+</div>
+<div class="flex items-center gap-4">
+<label class="relative">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-gray-400">search</span>
+<input class="form-input w-64 rounded-md border-gray-700 bg-gray-800 py-2 pl-10 pr-4 text-sm text-white placeholder:text-gray-400 focus:border-[var(--primary-color)] focus:ring-[var(--primary-color)]" placeholder="Search" value=""/>
+</label>
+<button class="flex h-9 w-9 items-center justify-center rounded-md bg-gray-800 text-gray-400 hover:bg-gray-700 hover:text-white transition-colors">
+<span class="material-symbols-outlined text-xl">help</span>
+</button>
+<div class="h-10 w-10 rounded-full bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA5r2IFj6ZyuWhEQqpuPADwG0UoXMhCJGJGK8MwTgR7KUsVZCbqI2hQLzKf9ozQ5Htr0VnjSa350I8IWe450Twgoe1n1FxISB_t8mtn5TWNn3oFpaC6HydEi-nxH30EQ352KR0DplxotG6ApEAXoCiqfpuu9TVmHsjQ83osXJueMPvtOqhj0uSz8A75cM_CB6ytDKsYlUL9CXcbC97huf0g2TlEseqDU4eIugsCh0IVF_tQQUfs6s9AybHYxg7QBcWCIW-J0BAM0jo");'></div>
+</div>
+</header>
+<main class="flex flex-1 justify-center py-8">
+<div class="w-full max-w-6xl px-4">
+<div class="flex flex-wrap items-center justify-between gap-4 mb-6">
+<h1 class="text-3xl font-bold text-white">Assets</h1>
+<div class="flex items-center gap-4">
+<button class="flex items-center gap-2 rounded-md bg-gray-800 px-4 py-2 text-sm font-medium text-white hover:bg-gray-700 transition-colors">
+<span class="material-symbols-outlined text-lg">
+                        file_upload
+                    </span>
+                  Import
+                </button>
+<button class="flex items-center gap-2 rounded-md bg-[var(--primary-color)] px-4 py-2 text-sm font-semibold text-white hover:bg-opacity-90 transition-colors">
+<span class="material-symbols-outlined text-lg">add</span>
+                  New asset
+                </button>
+</div>
+</div>
+<div class="mb-4">
+<label class="relative">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-gray-400">search</span>
+<input class="form-input w-full rounded-md border-gray-700 bg-gray-800 py-2.5 pl-10 pr-4 text-sm text-white placeholder:text-gray-400 focus:border-[var(--primary-color)] focus:ring-[var(--primary-color)]" placeholder="Search assets..." value=""/>
+</label>
+</div>
+<div class="border-b border-gray-800 mb-6">
+<nav class="flex gap-6 -mb-px">
+<a class="border-b-2 border-[var(--primary-color)] px-1 pb-3 text-sm font-semibold text-white" href="#">All assets</a>
+<a class="border-b-2 border-transparent px-1 pb-3 text-sm font-medium text-gray-400 hover:text-white hover:border-gray-500 transition-colors" href="#">Images</a>
+<a class="border-b-2 border-transparent px-1 pb-3 text-sm font-medium text-gray-400 hover:text-white hover:border-gray-500 transition-colors" href="#">Videos</a>
+<a class="border-b-2 border-transparent px-1 pb-3 text-sm font-medium text-gray-400 hover:text-white hover:border-gray-500 transition-colors" href="#">Documents</a>
+</nav>
+</div>
+<div class="overflow-x-auto rounded-md border border-gray-800 bg-gray-900">
+<table class="min-w-full divide-y divide-gray-800">
+<thead class="bg-gray-800/50">
+<tr>
+<th class="px-6 py-3 text-left text-xs font-medium uppercase tracking-wider text-gray-400" scope="col">Name</th>
+<th class="px-6 py-3 text-left text-xs font-medium uppercase tracking-wider text-gray-400" scope="col">Type</th>
+<th class="px-6 py-3 text-left text-xs font-medium uppercase tracking-wider text-gray-400" scope="col">Size</th>
+<th class="px-6 py-3 text-left text-xs font-medium uppercase tracking-wider text-gray-400" scope="col">Date Modified</th>
+<th class="relative px-6 py-3" scope="col">
+<span class="sr-only">Actions</span>
+</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-gray-800">
+<tr class="hover:bg-gray-800/50 transition-colors">
+<td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-white flex items-center gap-3">
+<span class="material-symbols-outlined text-gray-400">image</span>
+                        Logo
+                    </td>
+<td class="px-6 py-4 whitespace-nowrap text-sm text-gray-400">Image</td>
+<td class="px-6 py-4 whitespace-nowrap text-sm text-gray-400">2MB</td>
+<td class="px-6 py-4 whitespace-nowrap text-sm text-gray-400">2023-08-15</td>
+<td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
+<a class="text-[var(--primary-color)] hover:text-opacity-80" href="#">View</a>
+</td>
+</tr>
+<tr class="hover:bg-gray-800/50 transition-colors">
+<td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-white flex items-center gap-3">
+<span class="material-symbols-outlined text-gray-400">image</span>
+                        Banner
+                    </td>
+<td class="px-6 py-4 whitespace-nowrap text-sm text-gray-400">Image</td>
+<td class="px-6 py-4 whitespace-nowrap text-sm text-gray-400">5MB</td>
+<td class="px-6 py-4 whitespace-nowrap text-sm text-gray-400">2023-08-10</td>
+<td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
+<a class="text-[var(--primary-color)] hover:text-opacity-80" href="#">View</a>
+</td>
+</tr>
+<tr class="hover:bg-gray-800/50 transition-colors">
+<td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-white flex items-center gap-3">
+<span class="material-symbols-outlined text-gray-400">videocam</span>
+                        Promo Video
+                    </td>
+<td class="px-6 py-4 whitespace-nowrap text-sm text-gray-400">Video</td>
+<td class="px-6 py-4 whitespace-nowrap text-sm text-gray-400">10MB</td>
+<td class="px-6 py-4 whitespace-nowrap text-sm text-gray-400">2023-08-05</td>
+<td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
+<a class="text-[var(--primary-color)] hover:text-opacity-80" href="#">View</a>
+</td>
+</tr>
+<tr class="hover:bg-gray-800/50 transition-colors">
+<td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-white flex items-center gap-3">
+<span class="material-symbols-outlined text-gray-400">image</span>
+                        Product Image
+                    </td>
+<td class="px-6 py-4 whitespace-nowrap text-sm text-gray-400">Image</td>
+<td class="px-6 py-4 whitespace-nowrap text-sm text-gray-400">3MB</td>
+<td class="px-6 py-4 whitespace-nowrap text-sm text-gray-400">2023-07-20</td>
+<td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
+<a class="text-[var(--primary-color)] hover:text-opacity-80" href="#">View</a>
+</td>
+</tr>
+<tr class="hover:bg-gray-800/50 transition-colors">
+<td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-white flex items-center gap-3">
+<span class="material-symbols-outlined text-gray-400">videocam</span>
+                        Tutorial Video
+                    </td>
+<td class="px-6 py-4 whitespace-nowrap text-sm text-gray-400">Video</td>
+<td class="px-6 py-4 whitespace-nowrap text-sm text-gray-400">8MB</td>
+<td class="px-6 py-4 whitespace-nowrap text-sm text-gray-400">2023-07-15</td>
+<td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
+<a class="text-[var(--primary-color)] hover:text-opacity-80" href="#">View</a>
+</td>
+</tr>
+<tr class="hover:bg-gray-800/50 transition-colors">
+<td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-white flex items-center gap-3">
+<span class="material-symbols-outlined text-gray-400">image</span>
+                        Icon
+                    </td>
+<td class="px-6 py-4 whitespace-nowrap text-sm text-gray-400">Image</td>
+<td class="px-6 py-4 whitespace-nowrap text-sm text-gray-400">1MB</td>
+<td class="px-6 py-4 whitespace-nowrap text-sm text-gray-400">2023-07-10</td>
+<td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
+<a class="text-[var(--primary-color)] hover:text-opacity-80" href="#">View</a>
+</td>
+</tr>
+<tr class="hover:bg-gray-800/50 transition-colors">
+<td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-white flex items-center gap-3">
+<span class="material-symbols-outlined text-gray-400">image</span>
+                        Background Image
+                    </td>
+<td class="px-6 py-4 whitespace-nowrap text-sm text-gray-400">Image</td>
+<td class="px-6 py-4 whitespace-nowrap text-sm text-gray-400">4MB</td>
+<td class="px-6 py-4 whitespace-nowrap text-sm text-gray-400">2023-07-05</td>
+<td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
+<a class="text-[var(--primary-color)] hover:text-opacity-80" href="#">View</a>
+</td>
+</tr>
+<tr class="hover:bg-gray-800/50 transition-colors">
+<td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-white flex items-center gap-3">
+<span class="material-symbols-outlined text-gray-400">videocam</span>
+                        Demo Video
+                    </td>
+<td class="px-6 py-4 whitespace-nowrap text-sm text-gray-400">Video</td>
+<td class="px-6 py-4 whitespace-nowrap text-sm text-gray-400">12MB</td>
+<td class="px-6 py-4 whitespace-nowrap text-sm text-gray-400">2023-06-20</td>
+<td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
+<a class="text-[var(--primary-color)] hover:text-opacity-80" href="#">View</a>
+</td>
+</tr>
+<tr class="hover:bg-gray-800/50 transition-colors">
+<td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-white flex items-center gap-3">
+<span class="material-symbols-outlined text-gray-400">image</span>
+                        Social Media Post
+                    </td>
+<td class="px-6 py-4 whitespace-nowrap text-sm text-gray-400">Image</td>
+<td class="px-6 py-4 whitespace-nowrap text-sm text-gray-400">2MB</td>
+<td class="px-6 py-4 whitespace-nowrap text-sm text-gray-400">2023-06-15</td>
+<td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
+<a class="text-[var(--primary-color)] hover:text-opacity-80" href="#">View</a>
+</td>
+</tr>
+<tr class="hover:bg-gray-800/50 transition-colors">
+<td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-white flex items-center gap-3">
+<span class="material-symbols-outlined text-gray-400">description</span>
+                        Presentation Slides
+                    </td>
+<td class="px-6 py-4 whitespace-nowrap text-sm text-gray-400">Document</td>
+<td class="px-6 py-4 whitespace-nowrap text-sm text-gray-400">6MB</td>
+<td class="px-6 py-4 whitespace-nowrap text-sm text-gray-400">2023-06-10</td>
+<td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
+<a class="text-[var(--primary-color)] hover:text-opacity-80" href="#">View</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</main>
+</div>
+</div>
+
+</body></html>
