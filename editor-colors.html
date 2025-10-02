@@ -1,0 +1,177 @@
+<html><head>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Inter%3Awght%40400%3B500%3B600%3B700%3B900&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<title>Stitch Design</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<meta charset="utf-8"/>
+</head>
+<body class="bg-[#111827]">
+<div class="relative flex h-auto min-h-screen w-full flex-col bg-[#111827] dark group/design-root overflow-x-hidden" style="--select-button-svg: url('data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2724px%27 height=%2724px%27 fill=%27rgb(156,163,175)%27 viewBox=%270 0 256 256%27%3e%3cpath d=%27M181.66,170.34a8,8,0,0,1,0,11.32l-48,48a8,8,0,0,1-11.32,0l-48-48a8,8,0,0,1,11.32-11.32L128,212.69l42.34-42.35A8,8,0,0,1,181.66,170.34Zm-96-84.68L128,43.31l42.34,42.35a8,8,0,0,0,11.32-11.32l-48-48a8,8,0,0,0-11.32,0l-48,48A8,8,0,0,0,85.66,85.66Z%27%3e%3c/path%3e%3c/svg%3e'); font-family: Inter, &quot;Noto Sans&quot;, sans-serif;">
+<div class="layout-container flex h-full grow flex-col">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-gray-700 px-10 py-4">
+<div class="flex items-center gap-4 text-white">
+<div class="size-8 text-[#13a4ec]">
+<svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M44 11.2727C44 14.0109 39.8386 16.3957 33.69 17.6364C39.8386 18.877 44 21.2618 44 24C44 26.7382 39.8386 29.123 33.69 30.3636C39.8386 31.6043 44 33.9891 44 36.7273C44 40.7439 35.0457 44 24 44C12.9543 44 4 40.7439 4 36.7273C4 33.9891 8.16144 31.6043 14.31 30.3636C8.16144 29.123 4 26.7382 4 24C4 21.2618 8.16144 18.877 14.31 17.6364C8.16144 16.3957 4 14.0109 4 11.2727C4 7.25611 12.9543 4 24 4C35.0457 4 44 7.25611 44 11.2727Z" fill="currentColor"></path>
+</svg>
+</div>
+<h2 class="text-white text-xl font-bold leading-tight tracking-tight">Color Studio</h2>
+</div>
+<div class="flex flex-1 justify-end gap-6">
+<nav class="flex items-center gap-8">
+<a class="text-gray-300 hover:text-white text-sm font-medium leading-normal transition-colors" href="#">Home</a>
+<a class="text-white text-sm font-bold leading-normal border-b-2 border-[#13a4ec] pb-1" href="#">Palettes</a>
+<a class="text-gray-300 hover:text-white text-sm font-medium leading-normal transition-colors" href="#">Gradients</a>
+<a class="text-gray-300 hover:text-white text-sm font-medium leading-normal transition-colors" href="#">Tools</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="flex h-10 w-10 cursor-pointer items-center justify-center overflow-hidden rounded-full bg-gray-800 text-gray-400 hover:bg-gray-700 hover:text-white transition-colors">
+<span class="material-symbols-outlined text-2xl">help</span>
+</button>
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10 border-2 border-gray-700" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDSZ0YSYbUGkLSandPQF30Q766Ml3J0wesXM2wQYCToB1pssMrCod7ZIx7jf5TEkXvj4btJnTY1cpxQYTfapFUe4-y8a8j1I_Htg7tesiSpvz3ZVzeIDzYNHXzCV2lqePHX-fXQRwOIiKTisEEy2t9CyOOKNd4lUzneqGpx2cJkQsF7J9vpELLk5MWrKigWS6lb1WNIwR09Myy7kj0ET4-i-mJ92upRRhCgJVIUjuooJtfQ-qqXguMKbv2OHd98Rb0QDb5VlgBZAjc");'></div>
+</div>
+</div>
+</header>
+<main class="flex-1 grid grid-cols-12 gap-8 p-8">
+<aside class="col-span-3 bg-gray-900 rounded-lg shadow-lg p-6 flex flex-col gap-6">
+<h2 class="text-white text-2xl font-bold leading-tight tracking-tight">Create Palette</h2>
+<div class="flex flex-col gap-4">
+<label class="flex flex-col gap-2">
+<p class="text-gray-300 text-sm font-medium leading-normal">Palette Name</p>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-md text-white focus:outline-0 focus:ring-2 focus:ring-[#13a4ec] border border-gray-700 bg-gray-800 h-12 placeholder:text-gray-500 p-3 text-sm font-normal leading-normal" placeholder="e.g. Ocean Blues" value=""/>
+</label>
+<label class="flex flex-col gap-2">
+<p class="text-gray-300 text-sm font-medium leading-normal">Color Model</p>
+<select class="form-select flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-md text-white focus:outline-0 focus:ring-2 focus:ring-[#13a4ec] border border-gray-700 bg-gray-800 h-12 bg-[image:--select-button-svg] placeholder:text-gray-500 p-3 text-sm font-normal leading-normal appearance-none">
+<option>HEX</option>
+<option>RGB</option>
+<option>HSL</option>
+</select>
+</label>
+<div class="flex flex-col gap-3">
+<p class="text-gray-300 text-sm font-medium leading-normal">Colors</p>
+<div class="relative flex items-center">
+<div class="w-8 h-8 rounded-md border border-gray-600" style="background-color: #3b82f6;"></div>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-md text-white focus:outline-0 focus:ring-2 focus:ring-[#13a4ec] border border-gray-700 bg-gray-800 h-12 placeholder:text-gray-500 pl-12 pr-3 text-sm font-normal leading-normal" placeholder="#3b82f6" value="#3b82f6"/>
+</div>
+<div class="relative flex items-center">
+<div class="w-8 h-8 rounded-md border border-gray-600" style="background-color: #10b981;"></div>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-md text-white focus:outline-0 focus:ring-2 focus:ring-[#13a4ec] border border-gray-700 bg-gray-800 h-12 placeholder:text-gray-500 pl-12 pr-3 text-sm font-normal leading-normal" placeholder="#10b981" value="#10b981"/>
+</div>
+<div class="relative flex items-center">
+<div class="w-8 h-8 rounded-md border border-gray-600" style="background-color: #f97316;"></div>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-md text-white focus:outline-0 focus:ring-2 focus:ring-[#13a4ec] border border-gray-700 bg-gray-800 h-12 placeholder:text-gray-500 pl-12 pr-3 text-sm font-normal leading-normal" placeholder="#f97316" value="#f97316"/>
+</div>
+<div class="relative flex items-center">
+<div class="w-8 h-8 rounded-md border border-gray-600" style="background-color: #ec4899;"></div>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-md text-white focus:outline-0 focus:ring-2 focus:ring-[#13a4ec] border border-gray-700 bg-gray-800 h-12 placeholder:text-gray-500 pl-12 pr-3 text-sm font-normal leading-normal" placeholder="#ec4899" value="#ec4899"/>
+</div>
+<div class="relative flex items-center">
+<div class="w-8 h-8 rounded-md border border-gray-600 bg-gray-700"></div>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-md text-white focus:outline-0 focus:ring-2 focus:ring-[#13a4ec] border border-gray-700 bg-gray-800 h-12 placeholder:text-gray-500 pl-12 pr-3 text-sm font-normal leading-normal" placeholder="Add color" value=""/>
+</div>
+<button class="flex items-center justify-center gap-2 text-sm font-medium text-[#13a4ec] hover:text-white transition-colors py-2 rounded-md">
+<span class="material-symbols-outlined text-xl">add</span>
+                  Add Color
+                </button>
+</div>
+</div>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-md h-12 px-4 bg-[#13a4ec] text-white text-base font-bold leading-normal tracking-wide hover:bg-sky-500 transition-colors mt-auto">
+<span class="truncate">Save Palette</span>
+</button>
+</aside>
+<div class="col-span-9 flex flex-col gap-8">
+<div class="bg-gray-900 rounded-lg shadow-lg p-6">
+<h2 class="text-white text-2xl font-bold leading-tight tracking-tight mb-4">Palette Preview</h2>
+<div class="w-full gap-2 overflow-hidden bg-gray-900 aspect-[2/1] rounded-lg grid grid-cols-5">
+<div class="w-full bg-center bg-no-repeat bg-cover aspect-auto rounded-lg" style="background-color: #3b82f6;"></div>
+<div class="w-full bg-center bg-no-repeat bg-cover aspect-auto rounded-lg" style="background-color: #10b981;"></div>
+<div class="w-full bg-center bg-no-repeat bg-cover aspect-auto rounded-lg" style="background-color: #f97316;"></div>
+<div class="w-full bg-center bg-no-repeat bg-cover aspect-auto rounded-lg" style="background-color: #ec4899;"></div>
+<div class="w-full bg-center bg-no-repeat bg-cover aspect-auto rounded-lg" style="background-color: #6b7280;"></div>
+</div>
+</div>
+<div class="bg-gray-900 rounded-lg shadow-lg p-6">
+<h2 class="text-white text-2xl font-bold leading-tight tracking-tight mb-4">Manage Palettes</h2>
+<div class="overflow-x-auto">
+<table class="w-full text-left">
+<thead>
+<tr class="bg-gray-800">
+<th class="px-4 py-3 text-left text-gray-300 text-xs font-semibold uppercase tracking-wider">Name</th>
+<th class="px-4 py-3 text-left text-gray-300 text-xs font-semibold uppercase tracking-wider">Colors</th>
+<th class="px-4 py-3 text-left text-gray-300 text-xs font-semibold uppercase tracking-wider">Actions</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-gray-800">
+<tr class="hover:bg-gray-800 transition-colors">
+<td class="h-[72px] px-4 py-2 text-white text-sm font-normal leading-normal">Summer Breeze</td>
+<td class="h-[72px] px-4 py-2">
+<div class="flex items-center gap-2">
+<div class="size-6 rounded-full" style="background-color: #fefce8;"></div>
+<div class="size-6 rounded-full" style="background-color: #e0f2fe;"></div>
+<div class="size-6 rounded-full" style="background-color: #dcfce7;"></div>
+</div>
+</td>
+<td class="h-[72px] px-4 py-2">
+<div class="flex items-center gap-2">
+<button class="flex items-center justify-center w-8 h-8 rounded-md text-gray-400 hover:bg-gray-700 hover:text-white transition-colors">
+<span class="material-symbols-outlined text-xl">edit</span>
+</button>
+<button class="flex items-center justify-center w-8 h-8 rounded-md text-gray-400 hover:bg-red-500 hover:text-white transition-colors">
+<span class="material-symbols-outlined text-xl">delete</span>
+</button>
+</div>
+</td>
+</tr>
+<tr class="hover:bg-gray-800 transition-colors">
+<td class="h-[72px] px-4 py-2 text-white text-sm font-normal leading-normal">Winter Frost</td>
+<td class="h-[72px] px-4 py-2">
+<div class="flex items-center gap-2">
+<div class="size-6 rounded-full" style="background-color: #eff6ff;"></div>
+<div class="size-6 rounded-full" style="background-color: #dbeafe;"></div>
+<div class="size-6 rounded-full" style="background-color: #bfdbfe;"></div>
+</div>
+</td>
+<td class="h-[72px] px-4 py-2">
+<div class="flex items-center gap-2">
+<button class="flex items-center justify-center w-8 h-8 rounded-md text-gray-400 hover:bg-gray-700 hover:text-white transition-colors">
+<span class="material-symbols-outlined text-xl">edit</span>
+</button>
+<button class="flex items-center justify-center w-8 h-8 rounded-md text-gray-400 hover:bg-red-500 hover:text-white transition-colors">
+<span class="material-symbols-outlined text-xl">delete</span>
+</button>
+</div>
+</td>
+</tr>
+<tr class="hover:bg-gray-800 transition-colors">
+<td class="h-[72px] px-4 py-2 text-white text-sm font-normal leading-normal">Autumn Leaves</td>
+<td class="h-[72px] px-4 py-2">
+<div class="flex items-center gap-2">
+<div class="size-6 rounded-full" style="background-color: #f87171;"></div>
+<div class="size-6 rounded-full" style="background-color: #fb923c;"></div>
+<div class="size-6 rounded-full" style="background-color: #facc15;"></div>
+</div>
+</td>
+<td class="h-[72px] px-4 py-2">
+<div class="flex items-center gap-2">
+<button class="flex items-center justify-center w-8 h-8 rounded-md text-gray-400 hover:bg-gray-700 hover:text-white transition-colors">
+<span class="material-symbols-outlined text-xl">edit</span>
+</button>
+<button class="flex items-center justify-center w-8 h-8 rounded-md text-gray-400 hover:bg-red-500 hover:text-white transition-colors">
+<span class="material-symbols-outlined text-xl">delete</span>
+</button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</main>
+</div>
+</div>
+
+</body></html>
